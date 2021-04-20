@@ -1,9 +1,11 @@
 import React from 'react'
 import hi from '../images/hi.jpeg'
+// styles
+import styled from 'styled-components';
 
 const About = () => {
     return (
-        <div>
+        <AboutContainer>
             <div className="description">
                 <div className="title">
                     <div classname="hide">
@@ -23,8 +25,23 @@ const About = () => {
             <div className="image">
                 <img src={hi} alt="hi neon sign"/>
             </div>
-        </div>
+        </AboutContainer>
     )
 }
+
+//Styled components
+const AboutContainer = styled.div`
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    color: white;
+
+    img{
+        width:200px;
+        height:400px;
+    }
+`
 
 export default About;
