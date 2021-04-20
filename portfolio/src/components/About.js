@@ -3,23 +3,20 @@ import hi from '../images/hi.jpeg'
 // styles
 import styled from 'styled-components';
 
+
 const About = () => {
     return (
         <AboutContainer>
             <div className="description">
                 <div className="title">
                     <div classname="hide">
-                        <h2>We work to make</h2>
+                        <h2>I'm Katie Olson,</h2>
                     </div>
                     <div classname="hide">
-                        <h2>your <span>dreams</span> come
-                        </h2>
-                    </div>
-                    <div classname="hide">
-                        <h2>true.</h2>
+                        <h2>a <span>Full Stack Web Developer</span>.</h2>
                     </div>
                 </div>
-                <p>Contact me if you are interested in custom development work.</p>
+                <p>I'm also a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player.</p>
                 <button>Contact Me</button>
             </div>
             <div className="image">
@@ -38,9 +35,22 @@ const AboutContainer = styled.div`
     padding: 5rem 10rem;
     color: white;
 
-    img{
-        width:200px;
-        height:400px;
+    .description{
+        flex: 1;
+        padding-right: 5rem;
+        font-weight: lighter;
+    }
+    overflow: hidden;
+    .image{
+        flex: 1;
+        img{
+            width: 100%;
+            height: 80vh;
+            object-fit: cover;
+        }
+    }
+    .hide{
+        overflow: hidden;
     }
 `
 
