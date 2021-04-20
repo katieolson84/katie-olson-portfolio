@@ -6,10 +6,13 @@ import money from '../images/money.svg';
 import teamwork from '../images/teamwork.svg';
 // import images
 import heart from '../images/heart.jpeg';
+// Styles
+import styled from 'styled-components';
+import {Container} from '../styles';
 
 const Work = () => {
     return (
-        <div className="services">
+        <WorkContainer>
             <div className="description">
                 <h2>High <span>quality</span>services</h2>
                 <div className="cards">
@@ -46,8 +49,37 @@ const Work = () => {
             <div className="image">
                 <img src={heart} alt=""/>
             </div>
-        </div>
+        </WorkContainer>
     )
 }
+
+const WorkContainer = styled(Container)`
+    h2{
+        padding-bottom: 5rem;
+    }
+    p{
+        width: 70%;
+        padding: 2rem 0rem 4rem 0rem;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+       flex-basis: 20rem;
+       .icon{
+           display: flex;
+           align-items: center;
+           h3{
+               margin-left: 1rem;
+               background: white;
+               color: black;
+               padding: 1rem;
+           }
+       } 
+
+    }
+`
+
 
 export default Work
