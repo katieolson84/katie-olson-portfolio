@@ -14,35 +14,35 @@ const Work = () => {
     return (
         <WorkContainer>
             <div className="description">
-                <h2>High <span>quality</span>services</h2>
+                <h2>High <span>quality</span> projects</h2>
                 <div className="cards">
                     <div className="card">
                         <div className="icon">
                             <img src={clock} alt="clock icon"/>
                             <h3>Quick Projects</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Small projects built in less than a day.</p>
                     </div>
                     <div className="card">
                         <div className="icon">
                             <img src={teamwork} alt="teamwork icon"/>
                             <h3>Team Projects</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Collaborated with 4-7 devlopers on projects completed in less than four days.</p>
                     </div>
                     <div className="card">
                         <div className="icon">
                             <img src={diaphragm} alt="diaphragm icon"/>
-                            <h3>Efficent</h3>
+                            <h3>Extensive Wire Frames</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>All projects are mapped out with attention to detail before each build.</p>
                     </div>
                     <div className="card">
                         <div className="icon">
                             <img src={money} alt="money icon"/>
                             <h3>Affordable</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Freelance within your budget.</p>
                     </div>
                 </div>
             </div>
