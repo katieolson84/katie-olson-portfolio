@@ -3,29 +3,39 @@ import React from 'react';
 import GlobalStyle from './components/GlobalStyles';
 // import Pages
 import Nav from './components/Nav';
-import AboutMe from './Pages/AboutMe';
-import MyWork from './Pages/MyWork';
-import ContactMe from './Pages/ContactMe';
+import AboutMe from './pages/AboutMe';
+import MyWork from './pages/MyWork';
+import ContactMe from './pages/ContactMe';
+import ProjectDetails from './pages/ProjectDetails';
 // Router
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, useLocation } from 'react-router-dom';
+// Animation
+import { AnimatePresence } from "framer-motion"
 
 function App() {
+  const location = useLocation();
+  
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      
-      <Switch>
-        <Route path="/work">
-          <MyWork />
-        </Route>
-        <Route path="/contact">
-          <ContactMe />
-        </Route>
-        <Route exact path="/">
-          <AboutMe />
-        </Route>
-      </Switch>
+
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/work">
+            <MyWork />
+          </Route>
+          <Route exact path="/work/:id">
+            <ProjectDetails />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
+          <Route exact path="/">
+            <AboutMe />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }

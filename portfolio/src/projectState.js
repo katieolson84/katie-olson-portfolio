@@ -16,7 +16,7 @@ import Ron from './images/RonSwanson.png';
 import Ron2 from './images/ron2.png';
 // GitHub User Cards
 import github from './images/GitHubUserCard.jpg';
-import github2 from './images/GitHubFollowers.jpg';
+import github2 from './images/GitHubFollowers.png';
 // Nasa Pic of the Day
 import nasa from './images/Nasa.png';
 import nasa2 from './images/nasa2.png';

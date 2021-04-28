@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 // styles
-import {Container} from '../styles';
+import { About } from '../styles';
 
 const Faq = () => {
     return (
@@ -36,7 +36,7 @@ const Faq = () => {
     )
 }
 
-const FaqContainer = styled(Container)`
+const FaqContainer = styled(About)`
     display: block;
     span{
         display: block;
