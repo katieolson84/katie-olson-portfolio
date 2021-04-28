@@ -18,6 +18,7 @@ export const Description = styled.div`
   flex: 1;
   padding-right: 5rem;
   z-index: 2;
+  margin-top: 6rem;
   h2 {
     font-weight: lighter;
   }
@@ -32,6 +33,7 @@ export const Image = styled.div`
   z-index: 2;
   flex: 1;
   overflow: hidden;
+  margin-top: 5rem;
   img {
     width: 100%;
     height: 60vh; //changed from 80vh

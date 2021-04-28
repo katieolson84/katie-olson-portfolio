@@ -1,7 +1,7 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 300,
+    y: 0, //chnaged from 300
   },
   show: {
     opacity: 1,
@@ -9,22 +9,22 @@ export const pageAnimation = {
     transition: {
       duration: 0.5,
       when: "beforeChildren",
-      staggerChildren: 0.25, //chnaged from .25
+      staggerChildren: 0.20, //changed from .25
     },
   },
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.25,
     },
   },
 };
 
 export const titleAnim = {
-  hidden: { y: 200 },
+  hidden: { y: 300 },
   show: {
     y: 0,
-    transition: { duration: 0.75, ease: "easeOut" }, //changed from .75
+    transition: { duration: 0.95, ease: "easeOut" }, //changed from .75
   },
 };
 
@@ -43,7 +43,7 @@ export const photoAnim = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.75, //changed from 0.75
+      duration: 0.95, //changed from 0.75
     },
   },
 };
@@ -69,12 +69,12 @@ export const sliderContainer = {
 };
 
 export const scrollReveal = {
-  hidden: { opacity: 0, scale: 1.2, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 1.2, transition: { duration: 0.40 } },
   show: {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.50,
     },
   },
 };

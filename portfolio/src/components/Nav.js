@@ -29,6 +29,10 @@ const NavContainer = styled.nav`
     align-items: center;
     padding: 1rem 10rem;
     background: #282828;
+    position: fixed; 
+    width: 100%; 
+    z-index: 5;
+    /* z-index: */
     a{
         color: white;
         text-decoration: none;
@@ -39,7 +43,7 @@ const NavContainer = styled.nav`
     }
     #logo{
         font-size: 1.5rem;
-        font-family: "Lobster", cursive;
+        font-family: "Inter", sans-serif;
         font-weight: lighter;
     }
     li{

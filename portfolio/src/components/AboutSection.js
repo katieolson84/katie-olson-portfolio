@@ -23,11 +23,11 @@ const AboutSection = () => {
                         </motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>true.</motion.h2>
+                        <motion.h2 variants={titleAnim}></motion.h2>
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>
-                    I'm also a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player.
+                    I currently call Utah my home. I'm a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player. 
                 </motion.p>
                 <motion.button variants={fade}>Contact Me</motion.button>
             </Description>
