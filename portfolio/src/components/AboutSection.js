@@ -27,7 +27,7 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>
-                    I currently call Utah my home. I'm a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player. 
+                    I currently call Utah my home. I'm a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player. Contact me to learn more. 
                 </motion.p>
                 <motion.button variants={fade}>Contact Me</motion.button>
             </Description>
