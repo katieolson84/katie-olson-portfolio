@@ -25,7 +25,7 @@ const Faq = () => {
                         <p>I have teamed up with an experienced UX/UI designer to provide a complete package of services. Together we create logos, dynamite websites, complete branding packages, and custom software. We map out the design and layout of your build and communicate with you every step of the way. Contact me for more details.</p>
                     </div>
                 </Toggle>
-                <Toggle title="Timelines for Builds">
+                <Toggle title="Timeline for Builds">
                     <div className="answer">
                     <p>Every build is different. Each build is mapped out to determine the needs of the project and timeframes may vary. The number of features and the complexity of the app are taken into consideration when determining the time needed to develop an app. We can discuss options if your project is on a deadline.</p>
                     </div>

@@ -7,6 +7,7 @@ import AboutMe from './pages/AboutMe';
 import MyWork from './pages/MyWork';
 import ContactMe from './pages/ContactMe';
 import ProjectDetails from './pages/ProjectDetails';
+import Footer from './components/Footer';
 // Router
 import {Switch, Route, useLocation } from 'react-router-dom';
 // Animation
@@ -36,6 +37,7 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

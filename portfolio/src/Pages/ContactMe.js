@@ -1,59 +1,110 @@
-import React from "react";
-//Animations
-import { motion } from "framer-motion";
-import { pageAnimation, titleAnim } from "../animation";
-import styled from "styled-components";
 
-const ContactMe = () => {
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+// Animations
+import { motion } from 'framer-motion';
+import { pageAnimation, titleAnim } from '../animation';
+import styled from 'styled-components';
+
+const ContactMe= () => {
+  const [state, handleSubmit] = useForm("xwkalpod");
+  if (state.succeeded) {
+      return <ThankYouMessage>Thank you for reaching out!</ThankYouMessage>;
+  }
+
   return (
     <ContactStyle
       exit="exit"
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      style={{ background: "#fff" }}
     >
       <Title>
         <Hide>
           <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>
-        </Hide>
+         </Hide>
       </Title>
-      <div>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send Me A Message</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send an email.</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Social Media</h2>
-          </Social>
-        </Hide>
-      </div>
-    </ContactStyle>
-  );
-};
+
+      <div className="contact-form-container">
+        <form onSubmit={handleSubmit}>
+        <label htmlFor="email">
+          Email Address
+        </label>
+        <input
+          id="email"
+          type="email" 
+          name="email"
+        />
+        <ValidationError 
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
+        />
+        <label htmlFor="message">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="10"
+        />
+        <ValidationError 
+          prefix="Message" 
+          field="message"
+          errors={state.errors}
+        />
+        <button type="submit" disabled={state.submitting}>
+          Submit
+          
+        </button>
+      </form>
+    </div>
+  </ContactStyle>
+);
+}
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+
+  .contact-form-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 10rem 4rem 10rem; 
+  }
+
+  label{
+    color: #ffffff;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  input, textarea{
+    padding: .5rem .5rem;
+    font-family: 'Inter', sans-serif;
+  }
+
+  button{
+  margin: 1.5rem 0;
+  padding: 1rem .5rem;
+  width: 30%;
+  }
+  
   @media (max-width: 1500px) {
     padding: 2rem;
     font-size: 1rem;
   }
 `;
 const Title = styled.div`
-  margin-bottom: 4rem;
-  color: black;
+  margin: 0 0 4rem 8rem;
+  color: #ffffff;
   @media (max-width: 1500px) {
     margin-top: 5rem;
   }
@@ -61,18 +112,12 @@ const Title = styled.div`
 const Hide = styled.div`
   overflow: hidden;
 `;
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
-`;
-const Social = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  h2 {
-    margin: 2rem;
-  }
-`;
 
+const ThankYouMessage = styled.p`
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 13rem 0;
+`
 export default ContactMe;

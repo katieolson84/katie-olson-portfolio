@@ -24,7 +24,7 @@ const Work = () => {
       >
         <Description>
           <h2>
-              High <span>quality</span> projects
+              High <span>Quality</span> Projects
           </h2>
           <Cards>
               <Card>

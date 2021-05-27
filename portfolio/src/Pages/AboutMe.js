@@ -10,7 +10,12 @@ import ScrollTop from '../components/ScrollTop';
 
 const AboutMe = () => {
     return (
-    <motion.div exit="exit" variants={pageAnimation} initial="hidden" animate="show">
+    <motion.div 
+        exit="exit" 
+        variants={pageAnimation} 
+        initial="hidden" 
+        animate="show"
+    >
         <AboutSection />
         <Work />
         <Faq />
