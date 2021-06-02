@@ -17,7 +17,7 @@ const Faq = () => {
             initial="hidden"
         >
             <h2>
-                Available for<span>Freelance</span>
+                Available for <span>Freelance</span>
             </h2>
             <AnimateSharedLayout>
                 <Toggle title="Services Offered">
@@ -43,9 +43,11 @@ const Faq = () => {
 const FaqContainer = styled(About)`
     display: block;
     span{
-        display: block;
+        display: flex;
+        padding-left: 1rem;
     }
     h2{
+        display: flex;
         padding-bottom: 2rem;
         font-weight: lighter;
     }
