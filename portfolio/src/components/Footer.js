@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { fade } from "../animation";
 import { Description } from '../styles';
 // Icons
 import email from '../images/iconmonstr-email.png'
@@ -14,45 +12,42 @@ const Footer = () => {
     
     return (
         <FooterContainer>
-            <Description>
-                <h2>
-                    Let's Create Together
-                </h2>
-                <motion.button variants={fade}>Contact Me</motion.button>
-            </Description>
+            <h2>
+                Let's Create Together
+            </h2>
             <ul>
                 <li>
                     <a href="mailto:katieolson84@gmail.com">
                         <img src={email} alt="email icon" />
-                        KATIEOLSON84@GMAIL.COM
+                        <p>KATIEOLSON84@GMAIL.COM</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="https://www.linkedin.com/in/katieolson84/">
                         <img src={linkedin} alt="linkedin icon" />
-                        ON LINKEDIN
+                        <p>LINKEDIN</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="https://www.instagram.com/katie_one_hundred/">
                         <img src={insta} alt="instagram icon" />
-                        ON INSTAGRAM
+                        <p>INSTAGRAM</p>
                     </a>
                 </li>
 
                 <li> 
                     <a href="https://twitter.com/katieolson_100">
                         <img src={twitter} alt="twitter icon" />
-                        ON TWITTER
+                        <p>TWITTER</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="https://github.com/katieolson84">
                         <img src={github} alt="github icon" />
-                        CHECK OUT MY CODE
+                        <p>MY REPOS</p>
                     </a>
                 </li>
             </ul>
@@ -61,23 +56,27 @@ const Footer = () => {
 }
 
 const FooterContainer = styled.nav`
-    min-height: 40vh;
+    min-height: 30vh;
     display: flex;
-    justify-content: space-between;
-    padding: 3rem 10rem;
+    flex-direction: row;
+    padding-left: 8rem;
     background: #282828;
+    align-items: center;
+    justify-content: space-between;
+
     h2{
         color: #ffffff;
-        padding-bottom: 2rem;
+        margin-bottom: 0;
     }
+
     a{
         color: white;
         text-decoration: none;
         display: flex;
         align-items: center;
         font-size: 1.4rem;
-        
     }
+
     ul{
         display: flex;
         list-style: none;
@@ -90,14 +89,21 @@ const FooterContainer = styled.nav`
         position: relative;
         
     }
+
     img{
-        width: 40px;
+        width: 20px;
         margin: .6rem;
     }
+
+    p{
+        padding: 0 1rem;
+    }
+
     @media (max-width: 1300px) {
     flex-direction: column;
     padding: 1rem 1rem;
-    h2, button{
+
+    h2{
         margin-left: 2rem;
     }
 
@@ -105,6 +111,7 @@ const FooterContainer = styled.nav`
       display: inline-block;
       margin: 1rem;
     }
+
     ul {
       padding: 2rem;
       justify-content: space-around;

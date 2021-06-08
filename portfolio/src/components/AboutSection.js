@@ -1,5 +1,6 @@
 import React from 'react'
-// import hi from '../images/hi.jpeg'
+import { useHistory } from 'react-router-dom';
+// image import
 import katie from '../images/Katie_Olson.png';
 // styles
 import {About, Description, Image, Hide} from '../styles';
@@ -9,6 +10,11 @@ import { titleAnim, fade, photoAnim } from "../animation";
 import Wave from "./Wave";
 
 const AboutSection = () => {
+    const history = useHistory();
+
+    const redirect = () => {
+        history.push('/contact')
+    }
 
     return (
         <About>
@@ -29,7 +35,7 @@ const AboutSection = () => {
                 <motion.p variants={fade}>
                     I currently call Utah my home. I'm a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player. Contact me to learn more. 
                 </motion.p>
-                <motion.button variants={fade}>Contact Me</motion.button>
+                <motion.button variants={fade} onClick={redirect}>Contact Me</motion.button>
             </Description>
             <Image>
                 <motion.img variants={photoAnim} src={katie} alt="katie olson avatar" />

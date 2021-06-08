@@ -13,29 +13,29 @@ const Work = () => {
 
     return (
       <Services
-          // variants={scrollReveal}
-          // animate={controls}
-          // initial="hidden"
-          // ref={element}
+          variants={scrollReveal}
+          animate={controls}
+          initial="hidden"
+          ref={element}
       >
         <Description>
           <h2>
-              From My <span>Blog</span> 
+              Blog <span>Posts</span> 
           </h2>
           <Cards>
               <Card>
-                  <div className="pic">
+                  <div className="card">
                   <img alt="computer" src={computer} />
                   </div>
                   <h3>From HR to Web Development</h3>
-                  <p>It is never too lat to change careers.</p>
+                  <p className="card-details">It is never too late to change careers.</p>
               </Card>
               <Card>
-                  <div className="pic">
+                  <div className="card">
                   <img alt="figma board" src={figma} />
                   </div>
                   <h3>7 Ways to Improve UI/UX as a Developer</h3>
-                  <p>How a Full-Stack Developer took on the role of Design Lead to improve the user experience on an existing application.</p>
+                  <p className="card-details">How a Full-Stack Developer took on the role of Design Lead to improve the user experience on an existing application.</p>
               </Card>
           </Cards>
         </Description>
@@ -47,10 +47,6 @@ const Services = styled(About)`
   h2 {
     padding-bottom: 5rem;
   }
-  p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
-  }
 `;
 const Cards = styled.div`
   display: flex;
@@ -61,16 +57,27 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 20rem;
-  .pic {
+  padding: 2rem;
+  box-shadow: 0px 30px 60px -40px rgba(0, 0, 0, 0.5);
+
+  .card {
     display: flex;
     align-items: center;
-    width:300px;
-    height:200px;
+    width:100%;
+    overflow: hidden;
   }
   h3 {
-    margin-left: 1rem;
+    font-weight: lighter;
+    font-size: 1.4rem;
     background: white;
     color: black;
+    padding: 1rem;
+  }
+  img {
+    width: 350px;
+    height:200px;
+  }
+  p{
     padding: 1rem;
   }
 `;
