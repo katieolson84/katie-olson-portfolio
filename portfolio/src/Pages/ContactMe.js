@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 // Animations
@@ -21,7 +20,7 @@ const ContactMe= () => {
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>
+          <motion.h2 variants={titleAnim}>Get in touch</motion.h2>
          </Hide>
       </Title>
 
@@ -76,7 +75,7 @@ const ContactStyle = styled(motion.div)`
   form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     margin: 0 10rem 4rem 10rem; 
   }
 
@@ -97,16 +96,23 @@ const ContactStyle = styled(motion.div)`
   width: 30%;
   }
   
-  @media (max-width: 1500px) {
-    padding: 2rem;
+  @media (max-width: 1300px) {
+    padding: 1rem;
     font-size: 1rem;
+    form{
+      align-self: center;
+      width: 70%;
+    }
   }
 `;
 const Title = styled.div`
   margin: 0 0 4rem 8rem;
   color: #ffffff;
-  @media (max-width: 1500px) {
-    margin-top: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  @media (max-width: 1300px) {
+    margin: 2rem 0;
+    justify-content: center;
   }
 `;
 const Hide = styled.div`
@@ -119,5 +125,9 @@ const ThankYouMessage = styled.p`
   justify-content: center;
   font-size: 3rem;
   margin: 13rem 0;
+  @media (max-width: 1300px){
+    text-align: center;
+    font-size: 2rem;
+  }
 `
 export default ContactMe;

@@ -7,7 +7,7 @@ import { AnimateSharedLayout } from 'framer-motion';
 import { useScroll } from './useScroll';
 import { scrollReveal } from '../animation';
 
-const Faq = () => {
+const Freelance = () => {
     const [element, controls] = useScroll();
     return (
         <FaqContainer
@@ -16,9 +16,10 @@ const Faq = () => {
             animate={controls}
             initial="hidden"
         >
-            <h2>
-                Available for <span>Freelance</span>
-            </h2>
+            <div className="freelance-title">
+                <h2>Available for </h2>
+                <span>Freelance</span>
+            </div>
             <AnimateSharedLayout>
                 <Toggle title="Services Offered">
                     <div className="answer">
@@ -42,31 +43,47 @@ const Faq = () => {
 
 const FaqContainer = styled(About)`
     display: block;
-    span{
+
+    .freelance-title{
         display: flex;
-        padding-left: 1rem;
+        flex-direction: row;
     }
     h2{
         display: flex;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         font-weight: lighter;
+    }
+
+    span{
+        font-size: 4rem;
+        padding-left: 1rem;
     }
     .faq-line{
         background: #cccccc;
         height: 0.2rem;
-        margin: 2rem 0rem;
+        margin: 1rem 0rem;
         width: 100%;
     }
     .question{
-        padding: 3rem 0rem;
+        padding: 2rem 0rem;
         cursor: pointer;
     }
     .answer{
-        padding: 2rem 0rem;
+        padding: 1rem 0rem;
         p{
             padding: 1rem 0rem;
         }
     }
+    @media (max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .freelance-title{
+        display: flex;
+        flex-direction: column;
+        }
+    }
 `
 
-export default Faq
+export default Freelance;

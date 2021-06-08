@@ -1,8 +1,8 @@
 import React from 'react'
 // import page components
 import AboutSection from '../components/AboutSection';
-import Work from '../components/Work';
-import Faq from '../components/Faq';
+import Blog from '../components/Blog';
+import Freelance from '../components/Freelance';
 // Animations
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
@@ -17,8 +17,8 @@ const AboutMe = () => {
         animate="show"
     >
         <AboutSection />
-        <Work />
-        <Faq />
+        <Blog />
+        <Freelance />
         <ScrollTop />
     </motion.div>
     )

@@ -57,10 +57,12 @@ const NavContainer = styled.nav`
         color: white;
         text-decoration: none;
     }
+
     ul{
         display: flex;
         list-style: none;
     }
+
     #logo{
         font-size: 1.5rem;
         font-family: "Inter", sans-serif;
@@ -68,6 +70,7 @@ const NavContainer = styled.nav`
         border: solid white 3px;
         padding: .75rem;
     }
+
     li{
         padding-left: 10rem;
         position: relative;
@@ -79,6 +82,7 @@ const NavContainer = styled.nav`
       display: inline-block;
       margin: 1rem;
     }
+    
     ul {
       padding: 2rem;
       justify-content: space-around;

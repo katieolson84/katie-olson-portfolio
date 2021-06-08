@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Description } from '../styles';
 // Icons
 import email from '../images/iconmonstr-email.png'
 import linkedin from '../images/iconmonstr-linkedin.png'
@@ -10,60 +9,69 @@ import github from '../images/iconmonstr-github.png'
 
 const Footer = () => {
     
+    
     return (
         <FooterContainer>
-            <h2>
-                Let's Create Together
-            </h2>
-            <ul>
-                <li>
-                    <a href="mailto:katieolson84@gmail.com">
-                        <img src={email} alt="email icon" />
-                        <p>KATIEOLSON84@GMAIL.COM</p>
-                    </a>
-                </li>
+            <div className="footer">
+                <h2>
+                    Let's Create Together
+                </h2>
+                <ul>
+                    <li>
+                        <a href="mailto:katieolson84@gmail.com">
+                            <img src={email} alt="email icon" />
+                            <p>KATIEOLSON84@GMAIL.COM</p>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="https://www.linkedin.com/in/katieolson84/">
-                        <img src={linkedin} alt="linkedin icon" />
-                        <p>LINKEDIN</p>
-                    </a>
-                </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/katieolson84/">
+                            <img src={linkedin} alt="linkedin icon" />
+                            <p>LINKEDIN</p>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="https://www.instagram.com/katie_one_hundred/">
-                        <img src={insta} alt="instagram icon" />
-                        <p>INSTAGRAM</p>
-                    </a>
-                </li>
+                    <li>
+                        <a href="https://www.instagram.com/katie_one_hundred/">
+                            <img src={insta} alt="instagram icon" />
+                            <p>INSTAGRAM</p>
+                        </a>
+                    </li>
 
-                <li> 
-                    <a href="https://twitter.com/katieolson_100">
-                        <img src={twitter} alt="twitter icon" />
-                        <p>TWITTER</p>
-                    </a>
-                </li>
+                    <li> 
+                        <a href="https://twitter.com/katieolson_100">
+                            <img src={twitter} alt="twitter icon" />
+                            <p>TWITTER</p>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="https://github.com/katieolson84">
-                        <img src={github} alt="github icon" />
-                        <p>MY REPOS</p>
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="https://github.com/katieolson84">
+                            <img src={github} alt="github icon" />
+                            <p>MY REPOS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </FooterContainer>
     )
 }
 
 const FooterContainer = styled.nav`
-    min-height: 30vh;
+    min-height: 35vh;
     display: flex;
     flex-direction: row;
     padding-left: 8rem;
     background: #282828;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
+    .footer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
     h2{
         color: #ffffff;
         margin-bottom: 0;
@@ -81,7 +89,7 @@ const FooterContainer = styled.nav`
         display: flex;
         list-style: none;
         flex-direction: column;
-        padding-right: 6rem;
+        padding-right: 10rem;
     }
     
     li{
@@ -100,11 +108,14 @@ const FooterContainer = styled.nav`
     }
 
     @media (max-width: 1300px) {
-    flex-direction: column;
     padding: 1rem 1rem;
-
+    .footer{
+        flex-direction: column;
+    }
     h2{
-        margin-left: 2rem;
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 3.5rem;
     }
 
     #logo {
@@ -119,6 +130,7 @@ const FooterContainer = styled.nav`
       li {
         padding: 0;
       }
+    }
     }
 `;
 

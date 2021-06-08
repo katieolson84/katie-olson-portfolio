@@ -6,7 +6,7 @@ export const About = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 10rem;
+  padding: 3rem 8rem;
   color: white;
   @media (max-width: 1300px) {
     display: block;
@@ -16,9 +16,9 @@ export const About = styled(motion.div)`
 `;
 export const Description = styled.div`
   flex: 1;
-  padding-right: 5rem;
+  padding: 2rem;
   z-index: 2;
-  margin-top: 6rem;
+  margin-top: 3rem;
   h2 {
     font-weight: lighter;
   }
