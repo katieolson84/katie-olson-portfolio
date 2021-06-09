@@ -3,9 +3,9 @@ import React from 'react';
 import GlobalStyle from './components/GlobalStyles';
 // import Pages
 import Nav from './components/Nav';
-import AboutMe from './pages/AboutMe';
-import MyWork from './pages/MyWork';
-import ContactMe from './pages/ContactMe';
+import AboutMe from './components/AboutMe';
+import MyWork from './components/MyWork';
+import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 // Router
 import {Switch, Route, useLocation } from 'react-router-dom';
