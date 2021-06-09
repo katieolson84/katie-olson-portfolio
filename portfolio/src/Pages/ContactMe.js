@@ -53,7 +53,7 @@ const ContactMe= () => {
           errors={state.errors}
         />
         <button type="submit" disabled={state.submitting}>
-          Submit
+          SUBMIT
           
         </button>
       </form>

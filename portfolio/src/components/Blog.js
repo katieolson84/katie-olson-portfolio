@@ -24,7 +24,7 @@ const Blog = () => {
           </h2>
           <Cards>
               <Card>
-                <a href='https://katieolson84.medium.com/from-hr-to-web-development-7faab1e22f60'>
+                <a target="_blank" rel="noreferrer" href='https://katieolson84.medium.com/from-hr-to-web-development-7faab1e22f60'>
                   <div className="pic">
                     <img alt="computer" src={computer} />
                   </div>
@@ -34,7 +34,7 @@ const Blog = () => {
               </Card>
 
               <Card>
-                <a href='https://katieolson84.medium.com/7-ways-to-improve-ui-ux-as-a-developer-90c4a0b197a5'>
+                <a target="_blank" rel="noreferrer" href='https://katieolson84.medium.com/7-ways-to-improve-ui-ux-as-a-developer-90c4a0b197a5'>
                   <div className="pic">
                     <img alt="figma board" src={figma} />
                   </div>
@@ -66,14 +66,12 @@ const Card = styled.div`
   flex-basis: 20rem;
   padding: 1rem;
   box-shadow: 0px 30px 60px -40px rgba(0, 0, 0, 0.5);
-
   .pic {
     display: flex;
     align-items: center;
     width:100%;
     overflow: hidden;
   }
-
   h3 {
     font-weight: lighter;
     font-size: 1.8rem;
@@ -81,16 +79,13 @@ const Card = styled.div`
     color: #1C1C1C;
     padding: 1rem;
   }
-
   img {
     width: 45rem;
     height:25rem;
   }
-
   p{
     padding: 1rem;
   }
-
   a{
     cursor: pointer;
     text-decoration: none;
@@ -102,10 +97,8 @@ const Card = styled.div`
     img {
     width: 30rem;
     height:15rem;
-  }
+    }
   }
 `;
-
-
 
 export default Blog;

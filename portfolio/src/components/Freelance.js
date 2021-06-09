@@ -1,5 +1,5 @@
 import React from 'react'
-// styles
+// Styles & animation
 import styled from 'styled-components';
 import { About } from '../styles';
 import Toggle from './Toggle';
@@ -43,7 +43,6 @@ const Freelance = () => {
 
 const FaqContainer = styled(About)`
     display: block;
-
     .freelance-title{
         display: flex;
         flex-direction: row;
@@ -53,7 +52,6 @@ const FaqContainer = styled(About)`
         padding-bottom: 1rem;
         font-weight: lighter;
     }
-
     span{
         font-size: 4rem;
         padding-left: 1rem;
@@ -74,6 +72,7 @@ const FaqContainer = styled(About)`
             padding: 1rem 0rem;
         }
     }
+
     @media (max-width: 1300px) {
         display: flex;
         flex-direction: column;
@@ -84,6 +83,6 @@ const FaqContainer = styled(About)`
         flex-direction: column;
         }
     }
-`
+`;
 
 export default Freelance;

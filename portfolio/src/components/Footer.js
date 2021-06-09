@@ -2,13 +2,12 @@ import React from 'react'
 import styled from 'styled-components';
 // Icons
 import email from '../images/iconmonstr-email.png'
-import linkedin from '../images/iconmonstr-linkedin.png'
-import insta from '../images/iconmonstr-instagram.png'
-import twitter from '../images/iconmonstr-twitter.png'
 import github from '../images/iconmonstr-github.png'
+import insta from '../images/iconmonstr-instagram.png'
+import linkedin from '../images/iconmonstr-linkedin.png'
+import twitter from '../images/iconmonstr-twitter.png'
 
 const Footer = () => {
-    
     
     return (
         <FooterContainer>
@@ -25,28 +24,28 @@ const Footer = () => {
                     </li>
 
                     <li>
-                        <a href="https://www.linkedin.com/in/katieolson84/">
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/katieolson84/">
                             <img src={linkedin} alt="linkedin icon" />
                             <p>LINKEDIN</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.instagram.com/katie_one_hundred/">
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/katie_one_hundred/">
                             <img src={insta} alt="instagram icon" />
                             <p>INSTAGRAM</p>
                         </a>
                     </li>
 
                     <li> 
-                        <a href="https://twitter.com/katieolson_100">
+                        <a target="_blank" rel="noreferrer" href="https://twitter.com/katieolson_100">
                             <img src={twitter} alt="twitter icon" />
                             <p>TWITTER</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://github.com/katieolson84">
+                        <a target="_blank" rel="noreferrer" href="https://github.com/katieolson84">
                             <img src={github} alt="github icon" />
                             <p>MY REPOS</p>
                         </a>
@@ -65,7 +64,6 @@ const FooterContainer = styled.nav`
     background: #282828;
     align-items: center;
     justify-content: center;
-
     .footer{
         display: flex;
         width: 100%;
@@ -76,7 +74,6 @@ const FooterContainer = styled.nav`
         color: #ffffff;
         margin-bottom: 0;
     }
-
     a{
         color: white;
         text-decoration: none;
@@ -84,29 +81,27 @@ const FooterContainer = styled.nav`
         align-items: center;
         font-size: 1.4rem;
     }
-
     ul{
         display: flex;
         list-style: none;
         flex-direction: column;
         padding-right: 10rem;
     }
-    
     li{
         padding-left: 10rem;
         position: relative;
-        
     }
-
     img{
         width: 20px;
-        margin: .6rem;
+        margin: .7rem;
     }
-
     p{
-        padding: 0 1rem;
+        padding: 0 1.5rem;
+        &:hover{
+            color: #3BD997;
+        }
     }
-
+    
     @media (max-width: 1300px) {
     padding: 1rem 1rem;
     .footer{
@@ -115,14 +110,15 @@ const FooterContainer = styled.nav`
     h2{
         text-align: center;
         padding-top: 1rem;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
-
     #logo {
       display: inline-block;
       margin: 1rem;
     }
-
+    p{
+        font-size: 1rem;
+    }
     ul {
       padding: 2rem;
       justify-content: space-around;

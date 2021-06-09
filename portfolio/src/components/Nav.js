@@ -20,6 +20,7 @@ const Nav = () => {
                         animate={{ width: pathname === "/" ? "50%" : "0%" }}
                     />
                 </li>
+
                 <li>
                     <Link to="/work">My Work</Link>
                     <Line
@@ -28,6 +29,7 @@ const Nav = () => {
                         animate={{ width: pathname === "/work" ? "50%" : "0%" }}
                     />
                 </li>
+
                 <li>
                     <Link to="/contact">Contact Me</Link>
                     <Line
@@ -52,17 +54,14 @@ const NavContainer = styled.nav`
     position: sticky; 
     top: 0;
     z-index: 10;
-    
     a{
         color: white;
         text-decoration: none;
     }
-
     ul{
         display: flex;
         list-style: none;
     }
-
     #logo{
         font-size: 1.5rem;
         font-family: "Inter", sans-serif;
@@ -70,11 +69,11 @@ const NavContainer = styled.nav`
         border: solid white 3px;
         padding: .75rem;
     }
-
     li{
         padding-left: 10rem;
         position: relative;
     }
+
     @media (max-width: 1300px) {
     flex-direction: column;
     padding: 1rem 1rem;
@@ -82,7 +81,6 @@ const NavContainer = styled.nav`
       display: inline-block;
       margin: 1rem;
     }
-    
     ul {
       padding: 2rem;
       justify-content: space-around;
@@ -101,8 +99,10 @@ const Line = styled(motion.div)`
   position: absolute;
   bottom: -80%;
   left: 60%;
+
   @media (max-width: 1300px) {
-    left: 0%;
+    left: 25%;
   }
 `;
+
 export default Nav

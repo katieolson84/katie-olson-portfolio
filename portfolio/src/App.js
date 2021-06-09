@@ -6,7 +6,6 @@ import Nav from './components/Nav';
 import AboutMe from './pages/AboutMe';
 import MyWork from './pages/MyWork';
 import ContactMe from './pages/ContactMe';
-import ProjectDetails from './pages/ProjectDetails';
 import Footer from './components/Footer';
 // Router
 import {Switch, Route, useLocation } from 'react-router-dom';
@@ -25,9 +24,6 @@ function App() {
         <Switch location={location} key={location.pathname}>
           <Route exact path="/work">
             <MyWork />
-          </Route>
-          <Route exact path="/work/:id">
-            <ProjectDetails />
           </Route>
           <Route path="/contact">
             <ContactMe />

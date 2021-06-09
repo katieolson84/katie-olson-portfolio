@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-// images
+// Images
 import boombox from '../images/BoomboxLibrary.jpg';
 import cloud from '../images/clouddash.png';
 import github from '../images/GitHubUserCard.jpg';
@@ -45,7 +44,7 @@ const MyWork = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
                     <Hide className="image">
-                        <motion.img variants={photoAnim} src={hrfa} alt="human right first asylum app snapshot" />
+                        <motion.img variants={photoAnim} src={hrfa} alt="Human right first asylum app snapshot" />
                         <div className="image-overlay image-overlay-blur">
                            <h3>Full-Stack Developer & Design Lead</h3> 
                            <p>JavaScript | React | Less | Ant Design | Node.js | PostgreSQL | Figma</p>
@@ -66,7 +65,7 @@ const MyWork = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
                     <Hide>
-                        <motion.img variants={photoAnim} src={plants1} alt="water my plants app snapshot" />
+                        <motion.img variants={photoAnim} src={plants1} alt="Water my plants app snapshot" />
                         <div className="image-overlay image-overlay-blur">
                            <h3>Full-Stack Developer</h3> 
                            <p>JavaScript | React | Styled Components | Node.js | Knex | Jest | PostgreSQL | Figma | DB Designer</p>
@@ -75,7 +74,7 @@ const MyWork = () => {
                            <div className="links">
                                 <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/backend-node-water-my-plants'>BACK-END REPO</a>
                                 <p> | </p>
-                                <a target="_blank" rel="noreferrer" href='https://github.com/water-my-plants-tt27/frontend'>FRONT-END REPO</a>
+                                <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/frontend-water-my-plants'>FRONT-END REPO</a>
                                 <p> | </p>
                                 <a target="_blank" rel="noreferrer" href='https://frontend-water-my-plants.vercel.app/'>DEPLOYED SITE</a>
                                 <p> | </p>
@@ -91,20 +90,18 @@ const MyWork = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
                     <Hide>
-                        <motion.img variants={photoAnim} src={sauti} alt="sauti app snapshot" />
+                        <motion.img variants={photoAnim} src={sauti} alt="Sauti app snapshot" />
                         <div className="image-overlay image-overlay-blur">
-                           <h3>Full-Stack Developer</h3> 
-                           <p>JavaScript | React | Styled Components | Node.js | Knex | Jest | PostgreSQL | Figma | DB Designer</p>
-                           <p>An application to manage watering schedules and care for house plants. </p>
-                           <p className="text-body">I created a visual wireframe, using Figma, to map out the buiid from start to finish. I mainly worked on the backend and developed the schema for the database. Before we began coding, I mapped out each table with primary and forgein keys using DB Designer. I was soley responsible for creating seed data. When my tasks were completed, I was able to jump in and help the two front-end developers and coded a landing page for the app. </p>
+                           <h3>Front-End Developer</h3> 
+                           <p>JavaScript | React | Styled Components | Redux | Figma</p>
+                           <p>An online marketplace where women in Africa can sell goods across borders. </p>
+                           <p className="text-body">I worked strictly on the front-end. First, I created a visual wireframe, using Figma. I acted as the lead on the project and set up the repo in GitHub, installed all dependencies needed, and organized the repo for our team of six developers. I was solely responsible for setting up Redux on our build to allow access to state globally. </p>
                            <div className="links">
-                                <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/backend-node-water-my-plants'>BACK-END REPO</a>
+                                <a target="_blank" rel="noreferrer" href='https://github.com/African-Marketplace-TT27/front-end'>FRONT-END REPO</a>
                                 <p> | </p>
-                                <a target="_blank" rel="noreferrer" href='https://github.com/water-my-plants-tt27/frontend'>FRONT-END REPO</a>
+                                <a target="_blank" rel="noreferrer" href='https://sauti-african-marketplace-nine.vercel.app/'>DEPLOYED SITE</a>
                                 <p> | </p>
-                                <a target="_blank" rel="noreferrer" href='https://frontend-water-my-plants.vercel.app/'>DEPLOYED SITE</a>
-                                <p> | </p>
-                                <a target="_blank" rel="noreferrer" href='https://www.figma.com/file/va55FExpZocbW7A074bred/plant-store-Lambda?node-id=0%3A1'>FIGMA</a>
+                                <a target="_blank" rel="noreferrer" href='https://www.figma.com/file/GyyCawiA6ny47yANzDjf8S/Sauti-African-Market?node-id=0%3A1'>FIGMA</a>
                            </div>
                         </div>
                     </Hide>
@@ -116,7 +113,7 @@ const MyWork = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
                     <Hide>
-                        <motion.img variants={photoAnim} src={boombox} alt="boombox app snapshot" />
+                        <motion.img variants={photoAnim} src={boombox} alt="Boombox app snapshot" />
                         <div className="image-overlay image-overlay-blur">
                            <h3>Full-Stack Developer</h3> 
                            <p>JavaScript | React | SCSS </p>
@@ -124,6 +121,8 @@ const MyWork = () => {
                            <p className="text-body">I created this application during a course from 'Developed by Ed'. All styling is seperated into SCSS files to allow for quick changes. This was a fun project that allowed me to practice my skills in React. </p>
                            <div className="links">
                                 <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/Boombox'>FRONT-END REPO</a>
+                                <p> | </p>
+                                <a target="_blank" rel="noreferrer" href='https://boombox-gules.vercel.app/'>DEPLOYED SITE</a>
                            </div>
                         </div>
                     </Hide>
@@ -134,7 +133,20 @@ const MyWork = () => {
                 <h2 className="project">School in the Cloud</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
-                    <img src={cloud} alt="sauit app snapshot" />
+                    <Hide>
+                        <motion.img variants={photoAnim} src={cloud} alt="School in the cloud app snapshot" />
+                        <div className="image-overlay image-overlay-blur">
+                           <h3>Front-End Developer</h3> 
+                           <p>JavaScript | React | Styled Components </p>
+                           <p>A platform to train volunteer teachers to be tutors and connects them with students. </p>
+                           <p className="text-body">I worked as a front-end developer on this project with four other Web Developers. The site was built from scratch in four days. I created three dashboards, one for Admin, Volunteers, and Students using React and Styled Components. </p>
+                           <div className="links">
+                                <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/front-end-school-in-the-clouds'>FRONT-END REPO</a>
+                                <p> | </p>
+                                <a target="_blank" rel="noreferrer" href='https://school-in-the-cloud.vercel.app/'>DEPLOYED SITE</a>
+                           </div>
+                        </div>
+                    </Hide>
                 </div>
             </Project>
 
@@ -142,7 +154,20 @@ const MyWork = () => {
                 <h2 className="project">Ron Swanson Quotes</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
-                    <img src={Ron} alt="sauit app snapshot" />
+                    <Hide>
+                        <motion.img variants={photoAnim} src={Ron} alt="Ron Swanson app snapshot" />
+                        <div className="image-overlay image-overlay-blur">
+                           <h3>Front-End Developer</h3> 
+                           <p>JavaScript | React | Redux | Styled Components </p>
+                           <p>An app that generates a random Ron Swanson quote from Parks and Rec. </p>
+                           <p className="text-body">This project was built using React and Redux and accesses a Ron Swanson quote API. Ron's head icon moves when hovered to add a bit of animation. This site was completed in less than one day. </p>
+                           <div className="links">
+                                <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/React-Redux-Quote-of-the-day'>FRONT-END REPO</a>
+                                <p> | </p>
+                                <a target="_blank" rel="noreferrer" href='https://what-did-ron-swanson-say.vercel.app/'>DEPLOYED SITE</a>
+                           </div>
+                        </div>
+                    </Hide>
                 </div>
             </Project>
 
@@ -150,7 +175,20 @@ const MyWork = () => {
                 <h2 className="project">GitHub User Cards</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
-                    <img src={github} alt="sauit app snapshot" />
+                    <Hide>
+                        <motion.img variants={photoAnim} src={github} alt="GitHub user cards app snapshot" />
+                        <div className="image-overlay image-overlay-blur">
+                           <h3>Front-End Developer</h3> 
+                           <p>JavaScript | React | React-Bootstrap | CSS </p>
+                           <p>An app that fetches user info from the GitHup API to display user info and their followers. </p>
+                           <p className="text-body">I built this app in less than a day using class components in React. I used Axios to pull the user data from the GitHub API. I used React-Bootstrap for the Accordion and Card and it was styled using CSS. </p>
+                           <div className="links">
+                                <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/React-Github-User-Card'>FRONT-END REPO</a>
+                                <p> | </p>
+                                <a target="_blank" rel="noreferrer" href='https://github-user-card-chi.vercel.app/'>DEPLOYED SITE</a>
+                           </div>
+                        </div>
+                    </Hide>
                 </div>
             </Project>
 
@@ -158,7 +196,20 @@ const MyWork = () => {
                 <h2 className="project">Nasa Photo of the Day</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <div>
-                    <img src={nasa} alt="sauit app snapshot" />
+                    <Hide>
+                        <motion.img variants={photoAnim} src={nasa} alt="Nasa app snapshot" />
+                        <div className="image-overlay image-overlay-blur">
+                           <h3>Front-End Developer</h3> 
+                           <p>JavaScript | React | Styled Components </p>
+                           <p>An app that fetches user info from the GitHup API to display user info and their followers. </p>
+                           <p className="text-body">This project was built using React and was completed in less than one day. I pulled the Nasa photo of the day using axios and the NASA API with a useEffect hook. I then styled the app with Styled Components to mimic the 70's Nasa design and a polaroid picture. </p>
+                           <div className="links">
+                                <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/nasa-photo-of-the-day'>FRONT-END REPO</a>
+                                <p> | </p>
+                                <a target="_blank" rel="noreferrer" href='https://nasa-photo-of-the-day-beta-seven.vercel.app/'>DEPLOYED SITE</a>
+                           </div>
+                        </div>
+                    </Hide>
                 </div>
             </Project>
             <ScrollTop />
@@ -170,14 +221,18 @@ const WorkContainer = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
-    @media (max-width: 1300px) {
-        padding: 2rem 2rem;
-    }
     h2 {
         padding: 1rem 0rem;
         font-size: 3rem;
     }
-`
+
+    @media (max-width: 1300px) {
+        padding: 1rem;
+        h2{
+            font-size: 2rem;
+        }
+    }
+`;
 
 const Project = styled(motion.div)`
     padding-bottom: 10rem;
@@ -193,94 +248,112 @@ const Project = styled(motion.div)`
         object-fit: cover;
         object-position: left top;
     }
-`
-const Hide = styled.div`
-  overflow: hidden;
-  position: relative;
-  p{
-      padding: .8rem;
-  }
-  .text-body{
-      width: 80%;
-      text-align: center;
-  }
-  .links{
-    display: flex;
-  }
-  a{
-    text-decoration: none;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 1.5rem;
-    padding-top: .8rem;
-  }
 
-  .image{
-      display: block;
-      width: 100%;
-      
-  }
-  .image-overlay{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.25s;
-      &:hover{
-        opacity: 1;
-        & > * {
-            transform: translateY(0);
+    @media (max-width: 1300px) {
+        width: 100%;
+        padding: 2rem 2rem;
+        img{
+            height: 50vh;
         }
-      }
-      & > * {
-        transform: translateY(20px);
-        transition: transform 0.25s;
-      }
-  }
-  
-  .image-overlay-blur{
-          backdrop-filter: blur(5px)
-      }
-  /* .image-overlay > * {
-        transform: translateY(20px);
-        transition: transform 0.25s;
-  } */
+        h3{
+            text-align: center;
+        }
+    }
+`;
 
+const Hide = styled.div`
+    overflow: hidden;
+    position: relative;
+    p{
+        padding: .8rem;
+    }
+    .text-body{
+        width: 80%;
+        text-align: center;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 1.5rem;
+        padding-top: .8rem;
+    }
+    image{
+        display: block;
+        width: 100%;
+        
+    }
+    .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+        &:hover{
+            opacity: 1;
+            & > * {
+                transform: translateY(0);
+            }
+        }
+        & > * {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
 
-
-  h3{
-      font-size: 2rem;
-  }
+        @media (max-width: 1300px) {
+            a{
+                font-size: .8rem;
+                padding-top: .6rem;
+            }
+            p{
+                font-size: .9rem;
+                text-align: center;
+                padding: .5rem;
+            }
+        }
+    }
+    .image-overlay-blur{
+            backdrop-filter: blur(5px)
+        }
+    h3{
+        font-size: 2rem;
+    }
 `;
 
 //Frame Animation
-const Frame1 = styled(motion.div)`
-  position: fixed;
-  left: 0;
-  top: 10%;
-  width: 100%;
-  height: 100vh;
-  background: #fffebf;
-  z-index: 2;
-`;
-const Frame2 = styled(Frame1)`
-  background: #ff8efb;
-`;
-const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
-`;
-const Frame4 = styled(Frame1)`
-  background: #8effa0;
-`;
+    const Frame1 = styled(motion.div)`
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100vh;
+    background: #0c0c0c;
+    z-index: 2;
+    `;
 
+    const Frame2 = styled(Frame1)`
+    background: #6b6868;
+    `;
+
+    const Frame3 = styled(Frame1)`
+    background: #bcbaba;
+    `;
+
+    const Frame4 = styled(Frame1)`
+    background: #ffffff;
+    `;
 
 export default MyWork
  

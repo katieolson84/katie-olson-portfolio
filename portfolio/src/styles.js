@@ -14,6 +14,7 @@ export const About = styled(motion.div)`
     text-align: center;
   }
 `;
+
 export const Description = styled.div`
   flex: 1;
   padding: 2rem;
@@ -29,6 +30,7 @@ export const Description = styled.div`
     }
   }
 `;
+
 export const Image = styled.div`
   z-index: 2;
   flex: 1;
@@ -36,7 +38,7 @@ export const Image = styled.div`
   margin-top: 5rem;
   img {
     width: 100%;
-    height: 60vh; //changed from 80vh
+    height: 60vh; 
     object-fit: cover;
   }
 `;

@@ -1,7 +1,7 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 0, //chnaged from 300
+    y: 300,
   },
   show: {
     opacity: 1,
@@ -9,7 +9,7 @@ export const pageAnimation = {
     transition: {
       duration: 0.5,
       when: "beforeChildren",
-      staggerChildren: 0.20, //changed from .25
+      staggerChildren: 0.20, 
     },
   },
   exit: {
@@ -24,7 +24,7 @@ export const titleAnim = {
   hidden: { y: 300 },
   show: {
     y: 0,
-    transition: { duration: 0.95, ease: "easeOut" }, //changed from .75
+    transition: { duration: 0.95, ease: "easeOut" }, 
   },
 };
 
@@ -43,7 +43,7 @@ export const photoAnim = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.95, //changed from 0.75
+      duration: 0.95, 
     },
   },
 };

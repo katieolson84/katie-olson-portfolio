@@ -33,18 +33,24 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>
-                    I currently call Utah my home. I'm a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player. Contact me to learn more. 
+                    I currently call Utah my home and I'm in love with my mountain views. My passion is Front-end and I love using my creative background to bring projects to life.
                 </motion.p>
-                <motion.button variants={fade} onClick={redirect}>Contact Me</motion.button>
+                <motion.p variants={fade}>
+                    I'm a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player.
+                </motion.p>
+                <motion.p variants={fade}>
+                    Contact me to learn more. 
+                </motion.p>
+                <motion.button variants={fade} onClick={redirect}>CONTACT ME</motion.button>
             </Description>
+
             <Image>
                 <motion.img variants={photoAnim} src={katie} alt="katie olson avatar" />
             </Image>
+            
             <Wave />
         </About> 
     )
 }
-
-
 
 export default AboutSection;
