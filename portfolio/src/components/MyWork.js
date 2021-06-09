@@ -236,7 +236,7 @@ const WorkContainer = styled(motion.div)`
 
 const Project = styled(motion.div)`
     padding-bottom: 10rem;
-    width: 90%;
+    width: 100%;
     .line {
     height: 0.5rem;
     background: #23d997;
