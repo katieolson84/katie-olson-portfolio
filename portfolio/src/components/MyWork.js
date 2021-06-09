@@ -98,8 +98,8 @@ const MyWork = () => {
                            <p className="text-body">I worked strictly on the front-end. First, I created a visual wireframe, using Figma. I acted as the lead on the project and set up the repo in GitHub, installed all dependencies needed, and organized the repo for our team of six developers. I was solely responsible for setting up Redux on our build to allow access to state globally. </p>
                            <div className="links">
                                 <a target="_blank" rel="noreferrer" href='https://github.com/African-Marketplace-TT27/front-end'>FRONT-END REPO</a>
-                                <p> | </p>
-                                <a target="_blank" rel="noreferrer" href='https://sauti-african-marketplace-nine.vercel.app/'>DEPLOYED SITE</a>
+                                {/* <p> | </p>
+                                <a target="_blank" rel="noreferrer" href='https://sauti-african-marketplace-nine.vercel.app/'>DEPLOYED SITE</a> */}
                                 <p> | </p>
                                 <a target="_blank" rel="noreferrer" href='https://www.figma.com/file/GyyCawiA6ny47yANzDjf8S/Sauti-African-Market?node-id=0%3A1'>FIGMA</a>
                            </div>
@@ -142,8 +142,8 @@ const MyWork = () => {
                            <p className="text-body">I worked as a front-end developer on this project with four other Web Developers. The site was built from scratch in four days. I created three dashboards, one for Admin, Volunteers, and Students using React and Styled Components. </p>
                            <div className="links">
                                 <a target="_blank" rel="noreferrer" href='https://github.com/katieolson84/front-end-school-in-the-clouds'>FRONT-END REPO</a>
-                                <p> | </p>
-                                <a target="_blank" rel="noreferrer" href='https://school-in-the-cloud.vercel.app/'>DEPLOYED SITE</a>
+                                {/* <p> | </p>
+                                <a target="_blank" rel="noreferrer" href='https://school-in-the-cloud.vercel.app/'>DEPLOYED SITE</a> */}
                            </div>
                         </div>
                     </Hide>
@@ -285,7 +285,7 @@ const Hide = styled.div`
     image{
         display: block;
         width: 100%;
-        
+        border: none;
     }
     .image-overlay{
         position: absolute;
