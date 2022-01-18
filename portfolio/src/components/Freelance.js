@@ -28,7 +28,7 @@ const Freelance = () => {
                 </Toggle>
                 <Toggle title="Timeline for Builds">
                     <div className="answer">
-                    <p>Every build and project is different. Each build is mapped out to determine the needs of the project and timeframes may vary. The number of features and the complexity of the app are taken into consideration when determining the time needed to develop an app. We can discuss options if your project is on a deadline.</p>
+                    <p>Every build and project is different. Each build is mapped out to determine the needs of the project and timeframes may vary. The number of features and the complexity of the app are taken into consideration when determining the time needed to develop an app. We can discuss options if your project is on a deadline. I also offer my services as contract work on an as-needed basis with a 24-48 hour turn around time for small projects and or content management. </p>
                     </div>
                 </Toggle>
                 <Toggle title="Payments Methods">
