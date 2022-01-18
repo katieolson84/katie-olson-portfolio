@@ -36,7 +36,7 @@ const AboutSection = () => {
                     I currently call Utah my home and I'm in love with my mountain views. My passion is Front-end and I love using my creative background to bring projects to life.
                 </motion.p>
                 <motion.p variants={fade}>
-                    I'm a UI/UX enthusiast, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player.
+                    I'm a UI/UX enthusiast, tech guru, artist, Author, lover of goats, harbinger of vermaculture, & avid Dr. Mario player.
                 </motion.p>
                 <motion.p variants={fade}>
                     Contact me to learn more. 
